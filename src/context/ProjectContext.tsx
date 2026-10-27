@@ -105,12 +105,18 @@ export function ProjectsProvider({ children }: { children: ReactNode }) {
 
   const deleteTask = (projectId: string, taskId: string) => withErrorHandling(async () => {
     const project = findProject(projectId).toJSON();
+    if (!project.tasks.some((item) => item.id === taskId)) {
+      throw new Error('Não foi possível encontrar a tarefa.');
+    }
     project.tasks = project.tasks.filter((item) => item.id !== taskId);
     await persist(project);
   });
 
   const changeTaskStatus = (projectId: string, taskId: string, status: TaskStatus) => withErrorHandling(async () => {
     const project = findProject(projectId).toJSON();
+    if (!project.tasks.some((item) => item.id === taskId)) {
+      throw new Error('Não foi possível encontrar a tarefa.');
+    }
     project.tasks = project.tasks.map((item) => item.id === taskId ? { ...item, status } : item);
     await persist(project);
   });
