@@ -8,8 +8,6 @@
 
 Neste exercício desenvolvi uma pequena aplicação web que permite criar projetos e organizar as suas tarefas. Escolhi **React** porque quis praticar os componentes e os Hooks. Usei **TypeScript** para identificar erros de tipos enquanto programava.
 
-Procurei fazer uma aplicação simples, organizada e fácil de utilizar, como primeira versão funcional (MVP).
-
 ### Funcionalidades implementadas
 
 - **Dashboard:** lista os projetos e mostra o total de projetos, tarefas, tarefas concluídas e progresso global.
@@ -113,7 +111,6 @@ Os dados são guardados pelo JSON Server no ficheiro `db.json`.
 | Eliminar projeto | DELETE | `/projects/:id` |
 | Criar/editar/eliminar tarefa | PUT | `/projects/:id` |
 
-**Nota:** as tarefas estão dentro de cada projeto. Assim, quando uma tarefa é alterada, a aplicação envia o projeto atualizado à API com um `PUT`. Isto é suficiente para o MVP pedido no exercício, embora uma aplicação maior pudesse ter endpoints separados para as tarefas.
 
 ## 5. Como testar manualmente
 
@@ -126,18 +123,5 @@ Os dados são guardados pelo JSON Server no ficheiro `db.json`.
 7. Experimentar os filtros "Pendente", "Em progresso" e "Concluída".
 8. Eliminar uma tarefa e um projeto, confirmando as mensagens de aviso.
 
-## 6. Comandos Git usados
-
-A pasta contém um repositório Git local com commits separados para a estrutura inicial, funcionalidades e testes/documentação. Para ver o histórico:
-
-```bash
-git log --oneline
-```
-
-Para publicar no GitHub, seria necessário criar um repositório na conta do aluno e configurar o endereço remoto (`git remote add origin ...`). Este ZIP **não publica automaticamente** o projeto na Internet.
-
-## 7. Limitações e melhorias futuras
-
-Este projeto foi pensado como um primeiro MVP académico. Ainda não tem autenticação, diferentes utilizadores nem controlo de alterações simultâneas. Uma versão futura poderia incluir atribuição de tarefas a membros da equipa, notificações e uma API com base de dados real.
 
 **Tecnologias principais:** HTML, CSS, TypeScript, React, Context API, Vite, JSON Server e Vitest.
