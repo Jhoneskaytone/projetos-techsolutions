@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "id": "projeto-site",
+      "createdAt": "2026-10-10T10:00:00.000Z",
+      "name": "Novo site institucional",
+      "description": "Criar uma versão mais moderna do site da empresa, com páginas claras e adaptadas a telemóveis.",
+      "tasks": [
+        {
+          "id": "site-design",
+          "createdAt": "2026-10-10T10:00:00.000Z",
+          "title": "Criar o layout inicial",
+          "description": "Desenhar as páginas principais e escolher as cores da interface.",
+          "dueDate": "2026-11-04",
+          "status": "concluida"
+        },
+        {
+          "id": "site-frontend",
+          "createdAt": "2026-10-10T10:00:00.000Z",
+          "title": "Desenvolver o frontend",
+          "description": "Implementar as páginas com componentes reutilizáveis.",
+          "dueDate": "2026-11-19",
+          "status": "em-progresso"
+        },
+        {
+          "id": "site-testes",
+          "createdAt": "2026-10-10T10:00:00.000Z",
+          "title": "Testar em diferentes ecrãs",
+          "description": "Verificar a navegação no computador e no telemóvel.",
+          "dueDate": "2026-12-02",
+          "status": "pendente"
+        }
+      ]
+    },
+    {
+      "id": "projeto-app",
+      "createdAt": "2026-10-12T15:30:00.000Z",
+      "name": "Aplicação interna de tarefas",
+      "description": "Organizar as tarefas das equipas e acompanhar o andamento dos trabalhos.",
+      "tasks": [
+        {
+          "id": "app-requisitos",
+          "createdAt": "2026-10-12T15:30:00.000Z",
+          "title": "Levantar os requisitos",
+          "description": "Conversar com a equipa e identificar as funcionalidades necessárias.",
+          "dueDate": "2026-10-31",
+          "status": "concluida"
+        },
+        {
+          "id": "app-api",
+          "createdAt": "2026-10-12T15:30:00.000Z",
+          "title": "Ligar a API REST",
+          "description": "Criar operações para guardar e consultar os projetos.",
+          "dueDate": "2026-11-15",
+          "status": "pendente"
+        }
+      ]
+    }
+  ]
+}
